@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Nunito:wght@800&display=swap');
+
+
+:root{
+  --pagebg: #2f0e42;
+  --gridbg: #faf19e;
+  --eleclr: #f05273;
+  --borderclr: #2d3a47;
+  --titlecolor:#c53749;
+  --txtcolor: #f05273;
+  --button: #f1535c;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color: var(--pagebg);
+}
+
+.main{
+  display: grid;
+  grid-template-columns: repeat(3,20vh);
+  grid-auto-rows: 20vh;
+  margin-left: 35vw;
+  margin-top: 10vh;
+  width: 60vh;
+  height: 60vh;
+  border: solid;
+  border-radius: 3px;
+  border-width: 2.5vh;
+  border-color: var(--eleclr);
+}
+
+
+.child{
+  background-color: var(--gridbg);
+  outline: none;
+  cursor: pointer;
+  color: var(--txtcolor);
+  border-color: var(--borderclr);
+  border-width: 0.1rem;
+  font-size: 5rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+.heading{
+  margin-top: -13vh;
+  font-size: 5rem;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  color: var(--titlecolor);
+ /* font-family: 'Mukta', sans-serif;*/
+}
+
+
+#winDisplay{
+  margin-top: -5vh;
+  margin-bottom: -10vh;
+  font-size: 2rem;
+  color: var(--txtcolor);
+}
+
+#reset{
+  margin-left: 10vh;
+  margin-top: 20vh;
+  height: 8vh;
+  width: 20vh;
+  font-size: 2rem;
+  border-radius: 3px;
+  border-color: none;
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--button);
+  cursor: pointer;
+  outline: none;
+  border-color: transparent;
+}
